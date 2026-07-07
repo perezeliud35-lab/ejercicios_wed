@@ -11,14 +11,13 @@ const multiplicar = (a, b) => a * b;
 const dividir = (a, b) => (b !== 0 ? a / b : 'Error: División por cero');
 
 /**
- * @param {string} operacion - "suma", "resta", "multiplicacion" o "division".
+ * @param {string} operacion "
  */
 function calcularOperacion(operacion) {
 
     const valor1 = inputNumero1.value.trim();
     const valor2 = inputNumero2.value.trim();
 
-    // Validación: los campos no deben estar vacíos
     if (valor1 === '' || valor2 === '') {
         Swal.fire({
             icon: 'warning',
