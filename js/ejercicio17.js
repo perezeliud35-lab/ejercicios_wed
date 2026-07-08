@@ -19,12 +19,11 @@ const manejarTareas = (function () {
     }
 
     /**
-     * Agrega una nueva tarea al arreglo privado 
-     * @param {string} texto - Descripción de la tarea.
+     * @param {string} texto
      */
     function agregarTarea(texto) {
         const nuevaTarea = {
-            id: Date.now(),       // id único basado en la fecha/hora actual
+            id: Date.now(),
             texto: texto,
             completada: false
         };
@@ -33,9 +32,7 @@ const manejarTareas = (function () {
     }
 
     /**
-     * Elimina una tarea del arreglo privado según su id, y actualiza
-     * el storage.
-     * @param {number} id - Identificador de la tarea a eliminar.
+     * @param {number} id
      */
     function eliminarTarea(id) {
         tareas = tareas.filter(tarea => tarea.id !== id);
@@ -93,8 +90,7 @@ function renderizarTareas() {
 
 
 /**
- * Muestra una confirmación con SweetAlert2 antes de eliminar una tarea.
- * @param {number} id - Identificador de la tarea a eliminar.
+ * @param {number} id
  */
 function confirmarEliminar(id) {
     Swal.fire({

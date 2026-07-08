@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Calificaciones de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Calificaciones de Estudiantes</h1>
+        <p class="subtitulo">Agrega estudiantes y calcula sus estadísticas</p>
+        <div class="grupo-doble">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan">
+            </div>
+            <div class="grupo-formulario">
+                <label for="calificacion">Calificación</label>
+                <input type="text" id="calificacion" placeholder="Ej: 85">
+            </div>
+        </div>
+
+        <button type="button" id="btnAgregar" class="boton-secundario">Agregar estudiante</button>
+        <ul id="listaEstudiantes" class="lista-estudiantes"></ul>
+
+        <button type="button" id="btnCalcular" class="boton-convertir">Calcular</button>
+
+        <div class="grupo-formulario">
+            <label for="promedio">Calificación promedio</label>
+            <input type="text" id="promedio" readonly placeholder="Resultado">
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="masAlta">Estudiante con calificación más alta</label>
+            <input type="text" id="masAlta" readonly placeholder="Resultado">
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="masBaja">Estudiante con calificación más baja</label>
+            <input type="text" id="masBaja" readonly placeholder="Resultado">
+        </div>
+
+        <p id="mensajeError" class="mensaje-error"></p>
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>
